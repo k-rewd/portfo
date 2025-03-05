@@ -9,8 +9,12 @@ export default function App() {
     <>
       {/* <Nav /> */}
       <body>
-        <Home />
-        <Project />
+        <div className='outer-wrapper'>
+          <div className='wrapper'>
+            <Home />
+            <Project />
+          </div>
+        </div>
       </body>
     </>
   )
