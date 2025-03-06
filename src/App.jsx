@@ -11,8 +11,8 @@ export default function App() {
       <body>
         <div className='outer-wrapper'>
           <div className='wrapper'>
-            <Home />
             <Project />
+            <Home />
           </div>
         </div>
       </body>
