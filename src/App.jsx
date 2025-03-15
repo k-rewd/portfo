@@ -1,21 +1,17 @@
-import Home from './sections/Home/home.jsx'
-import Nav from './sections/Nav/nav.jsx'
-import Project from './sections/Project/project.jsx'
+import { ParallaxProvider } from 'react-scroll-parallax';
 import './styles.css'
+import Portfolio from './Portfolio';
 
 export default function App() {
 
   return (
     <>
       {/* <Nav /> */}
-      <body>
         <div className='outer-wrapper'>
           <div className='wrapper'>
-            <Project />
-            <Home />
+            <Portfolio />
           </div>
         </div>
-      </body>
     </>
   )
 }
