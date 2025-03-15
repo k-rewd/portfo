@@ -22,7 +22,7 @@ ul {
 .outer-wrapper {
   position: absolute;
   width: 100vh;
-  height: 100vw;
+  height: 100vw; /* might fck me later */
   transform: rotate(-90deg) translateX(-100vh);
   transform-origin: top left;
   overflow-y: auto;
@@ -43,13 +43,71 @@ ul {
 
 .parallax_wrapper {
   display: flex;
+  flex-direction: row;
+
+  height: 100vh;
   perspective: 300px;
 }
 
 .parallax_group {
-  border: 1px solid red;
   width: 100vw;
+  
+  position: relative;
+  transform-style: preserve-3d;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-  scroll-snap-align: end;
-  scroll-snap-stop: always;
 }
+.parallax_group.intro_screen {
+  background-color: tomato;
+}
+
+.parallax_layer {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+}
+
+
+/* scale calc: 1 + ((Z transform val * -1) / perspective) */
+.parallax_layer.base_layer {
+  transform: translateZ(-300px) scale();
+}
+
+
+#intro {}
+
+
+#intro > .base_layer {
+  font-size: 300px;
+
+}
+#intro > .mid_layer {
+  font-size: 200px;
+}
+#intro> .top_layer {
+  font-size: 100px;
+}
+
+#section-2 {}
+
+#section-2 > .base_layer {
+  background-color: red;
+}
+#section-2 > .mid_layer {
+  background-color: orange;
+}
+#section-2 > .top_layer {
+  background-color: yellow;
+}
+
+#section-3 {}
+
+#section-3 > .mid_layer {
+  background-color: yellowgreen;
+}
+
+#outro {}
