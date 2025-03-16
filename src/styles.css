@@ -20,9 +20,8 @@ ul {
 }
 
 .outer-wrapper {
-  position: absolute;
-  width: 100vh;
-  height: 100vw; /* might fck me later */
+
+
   transform: rotate(-90deg) translateX(-100vh);
   transform-origin: top left;
   overflow-y: auto;
@@ -36,7 +35,7 @@ ul {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 100vw; /* set to number of sections x 100vh*/
+  width: 400vw; /* set to number of sections x 100vh*/
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
@@ -44,8 +43,9 @@ ul {
 .parallax_wrapper {
   display: flex;
   flex-direction: row;
-
-  height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 100vw;
   perspective: 300px;
 }
 
@@ -72,19 +72,32 @@ ul {
 
 /* scale calc: 1 + ((Z transform val * -1) / perspective) */
 .parallax_layer.base_layer {
-  transform: translateZ(-300px) scale(2);
+  transform: translateZ(-100px) scale(2);
+  /* left: 5px; */
+  background-color: aqua;
 }
 
+.parallax_layer.mid_layer {
+  transform: translateZ(-75px) scale(1.25);
+  /* left: 5px; */
+  background-color: aqua;
+}
+
+.parallax_layer.top_layer {
+  transform: translateZ(-50px) scale(1.16);
+  /* left: 5px; */
+  background-color: aqua;
+}
 
 #intro {}
 
 
 #intro > .base_layer {
-  font-size: 300px;
+  font-size: 200px;
 
 }
 #intro > .mid_layer {
-  font-size: 200px;
+  font-size: 150px;
 }
 #intro> .top_layer {
   font-size: 100px;
