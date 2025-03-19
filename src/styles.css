@@ -5,47 +5,29 @@
 }
 
 html {
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
+  /* -ms-overflow-style: none;  Internet Explorer 10+ */
+  /* scrollbar-width: none;  Firefox */
   /* scroll-snap-type: x mandatory; */
   /* scroll-padding-top: 5vh; */
 }
 
 ::-webkit-scrollbar { 
-  display: none;  /* Safari and Chrome */
+  /* display: none;  Safari and Chrome */
 }
 
 ul {
   list-style: none;
 }
 
-.outer-wrapper {
-  position: fixed;
+.container {
 
-  transform: rotate(-90deg) translateX(-100vh);
-  transform-origin: top left;
-  overflow-y: auto;
-  overflow-x: hidden;
-
-  writing-mode: horizontal-tb;
-  direction: ltr;
-
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  width: 400vw; /* set to number of sections x 100vh*/
-  transform: rotate(90deg) translateY(-100vh);
-  transform-origin: top left;
-}
-
-.parallax_wrapper {
-  display: flex;
-  flex-direction: row;
   overflow-x: auto;
   overflow-y: hidden;
-  height: 100vw;
-  
+  display: flex;
+  flex-direction: row;
+  /* gap: 100vw; */
+  height: 100vh;
+  perspective: 10px;
+  scroll-snap-type: x mandatory;
+  inset: 0;
 }
-

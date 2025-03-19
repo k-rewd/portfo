@@ -7,15 +7,11 @@ import ProjectA from './sections/Projects/ProjectA';
 export default function App() {
 
   return (
-    <>
+    <div className='container'>
       {/* <Nav /> */}
-      <div className='outer-wrapper'>
-        <div className='wrapper'>
           <Home />
           <ProjectA />
-        </div>
-      </div>
-    </>
+    </div>
   )
 }
 
