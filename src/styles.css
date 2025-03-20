@@ -12,12 +12,17 @@ html {
 }
 
 ::-webkit-scrollbar { 
-  /* display: none;  Safari and Chrome */
+  /* Safari and Chrome */
+  /* display: none; */
+  
 }
 
 ul {
   list-style: none;
 }
+
+
+
 
 .container {
 
@@ -30,4 +35,43 @@ ul {
   perspective: 10px;
   scroll-snap-type: x mandatory;
   inset: 0;
+  
+  pointer-events: none;
+}
+
+.container::-webkit-scrollbar {
+  height: 8px; /* Keep scrollbar visible */
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+  
+
+}
+
+.button-page-indicator {
+  position: absolute;
+  bottom: 5em;
+  right: 5em;
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  
+}
+
+.disabled {
+  visibility: hidden;
+}
+
+.nav-button {
+  border: none;
+  background-color: transparent;
+  font-size: 3em;
+  cursor: pointer;
+  padding: .5em;
+}
+
+.page-indicator {
+  font-size: 5em;
 }

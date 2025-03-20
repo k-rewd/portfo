@@ -5,10 +5,24 @@ export default function Home() {
 
     <div className="parallax_group" id='home'>
       {/* Section 1 */}
-      <h1>Section 1</h1>
-      <div className="parallax_layer base_layer">1base</div>
-      <div className="parallax_layer mid_layer">1mid</div>
-      <div className="parallax_layer top_layer">1top</div>
+      {/* <h1>Section 1</h1> */}
+      <div className="parallax_layer base_layer" >
+        <div className="image-container"></div>
+      </div>
+      <div className="parallax_layer mid_layer" >1mid</div>
+      <div className="parallax_layer top_layer" >
+        <div className="intro-title">
+          <span className="topline">
+            <p>web</p>
+            <p>/</p>
+            <p>app</p>
+            <p>development</p>
+            <p>& </p>
+            <p>design</p>
+          </span>
+          <h1>andrew</h1>
+        </div>
+      </div>
 
     </div>
 
