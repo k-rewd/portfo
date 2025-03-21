@@ -6,11 +6,11 @@ export default function Home() {
     <div className="parallax_group" id='home'>
       {/* Section 1 */}
       {/* <h1>Section 1</h1> */}
-      <div className="parallax_layer base_layer" >
+      <div className="parallax_layer page_1-base_layer" >
         <div className="image-container"></div>
       </div>
-      <div className="parallax_layer mid_layer" >1mid</div>
-      <div className="parallax_layer top_layer" >
+      <div className="parallax_layer page_1-mid_layer" >1mid</div>
+      <div className="parallax_layer page_1-top_layer" >
         <div className="intro-title">
           <span className="topline">
             <p>web</p>

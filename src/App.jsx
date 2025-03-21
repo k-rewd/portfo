@@ -21,6 +21,15 @@ export default function App() {
     }
   };
 
+  const scrollToLast = () => {
+    if (containerRef.current) {
+      containerRef.current.scrollTo({
+        left: containerRef.current.scrollWidth - containerRef.current.clientWidth,
+        behavior: "smooth",
+      });
+    }
+  };
+
   // Track the current page number based on scroll position
   useEffect(() => {
     const handleScroll = () => {
@@ -46,9 +55,9 @@ export default function App() {
       <span className="button-page-indicator">
         <div className="nav-buttons">
           <button
-            className={`nav-button left ${page === 1 ? "disabled" : ""}`}
-            onClick={scrollToPrev}
-            disabled={page === 1}
+            className='nav-button left'
+            onClick={page === 1 ? scrollToLast : scrollToPrev}
+            // disabled={page === 1}
           >
             &lt;
           </button>

@@ -2,3 +2,74 @@
   /* background-color: aquamarine; */
 
 }
+
+.parallax_group {
+
+  transform-style: preserve-3d;
+  min-width: 100vw;
+  height: 100vh;
+  position: relative;
+  scroll-snap-align: start;
+  border: 3px solid green;
+  contain: layout paint;
+}
+
+.parallax_layer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items:center; */
+  /* object-fit: cover; */
+
+
+
+}
+
+/* 1 + ((Z transform value * -1) / perspective) */
+
+/* base layer */
+.parallax_layer.page_2-base_layer {
+  font-size: 100px;
+  transform: translateZ(-10px) scale(2);
+  border: 1px solid red;
+
+}
+
+.image-container {
+  background-color: rgba(128, 128, 128, 0.5);
+  height: 100%;
+  width: 60%;
+
+}
+
+
+.parallax_layer.page_2-mid_layer {
+  transform: translateZ(-5px) scale(1.5);
+  font-size: 100px;
+  border: 1px solid red;
+}
+
+
+/* top layer */
+.parallax_layer.page_2-top_layer {
+  /* transform: translateZ(0px) scale(1); */
+  border: 10px solid yellow;
+  display: flex;
+
+  
+}
+
+.project-1.left {
+  background-color: aqua;
+  height: 100%;
+  width: 40%;
+}
+
+.project-1.right {
+  height:100%;
+  width: 60%;
+
+  background-color: gold;
+}
