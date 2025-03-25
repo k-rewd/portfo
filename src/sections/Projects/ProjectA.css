@@ -62,14 +62,29 @@
 }
 
 .project-1.left {
-  background-color: aqua;
   height: 100%;
   width: 40%;
+  padding-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
 }
 
 .project-1.right {
-  height:100%;
+  height: 100%;
   width: 60%;
 
   background-color: gold;
+}
+
+.project-1-window-1 {
+  border: 1px solid red;
+  height: 40%;
+  width: 60%;
+  box-shadow: 0 0 0 99999px rgb(255, 255, 255)
+}
+
+.project-1-window-2 {
+  border: 1px solid red;
 }
