@@ -1,3 +1,4 @@
+import Techstack from "../Techstack/Techstack";
 import "./Home.css";
 
 export default function Home() {
@@ -9,7 +10,9 @@ export default function Home() {
       <div className="parallax_layer page_1-base_layer" >
         <div className="image-container"></div>
       </div>
-      <div className="parallax_layer page_1-mid_layer" >1mid</div>
+      <div className="parallax_layer page_1-mid_layer" >
+        <Techstack />
+      </div>
       <div className="parallax_layer page_1-top_layer" >
         <div className="intro-title">
           <span className="topline">

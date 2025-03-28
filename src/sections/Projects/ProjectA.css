@@ -10,7 +10,6 @@
   height: 100vh;
   position: relative;
   scroll-snap-align: start;
-  border: 3px solid green;
   contain: layout paint;
 }
 
@@ -33,32 +32,40 @@
 .parallax_layer.page_2-base_layer {
   font-size: 100px;
   transform: translateZ(-10px) scale(2);
-  border: 1px solid red;
+  display: flex;
+
 
 }
 
-.image-container {
-  background-color: rgba(128, 128, 128, 0.5);
-  height: 100%;
-  width: 60%;
 
-}
 
 
 .parallax_layer.page_2-mid_layer {
   transform: translateZ(-5px) scale(1.5);
   font-size: 100px;
-  border: 1px solid red;
+  display: flex;
+
 }
 
 
 /* top layer */
 .parallax_layer.page_2-top_layer {
   /* transform: translateZ(0px) scale(1); */
-  border: 10px solid yellow;
   display: flex;
 
   
+}
+
+.page-title-container {
+  position: absolute;
+  transform: rotate(270deg);
+  left: 40%;
+  top: 50%;
+
+  font-size: 2em;
+}
+.page-title.line-2 {
+  padding-left: 100%;
 }
 
 .project-1.left {
@@ -66,25 +73,46 @@
   width: 40%;
   padding-bottom: 5%;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden
 }
 
 .project-1.right {
   height: 100%;
   width: 60%;
-
-  background-color: gold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
 }
 
 .project-1-window-1 {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 40%;
   width: 60%;
-  box-shadow: 0 0 0 99999px rgb(255, 255, 255)
+  box-shadow: 0 0 0 99999px rgba(250, 250, 250, 0.925)
 }
 
 .project-1-window-2 {
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  height: 50%;
+  width: 60%;
+  box-shadow: 0 0 0 99999px rgb(250, 250, 250)
+
+}
+
+.window-filler {
+  height: 40%;
+  width: 60%;
+}
+
+.img-left {
+  width: 5em;
+}
+
+.img-right {
+  width: 7em;
 }
