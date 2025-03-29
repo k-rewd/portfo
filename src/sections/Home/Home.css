@@ -7,7 +7,6 @@
   height: 100vh;
   position: relative;
   scroll-snap-align: start;
-  border: 3px solid green;
   contain: layout paint;
 }
 
@@ -29,12 +28,16 @@
 .parallax_layer.page_1-base_layer {
   font-size: 100px;
   transform: translateZ(-10px) scale(2);
-  border: 1px solid red;
 
 }
+.left-side {
+  width: 57%;
+}
+.right-side {
 
+  width: 43%;
+}
 .image-container {
-  background-color: rgba(128, 128, 128, 0.5);
   height: 100%;
   width: 60%;
 
@@ -44,7 +47,6 @@
 .parallax_layer.page_1-mid_layer {
   transform: translateZ(-5px) scale(1.5);
   font-size: 100px;
-  border: 1px solid red;
 }
 
 
@@ -52,9 +54,8 @@
 .parallax_layer.page_1-top_layer {
   /* transform: translateZ(0px) scale(1); */
 
-  border: 10px solid pink;
-
-
+  background-color: rgba(250, 250, 250, 0.377);
+  display:flex;
   
 }
 
@@ -65,6 +66,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(240, 248, 255, 0.5);
+  padding: 10px;
 
 }
 .topline {
@@ -74,7 +77,25 @@
   font-size: 22px;
   letter-spacing: 7px;
 }
+
 .intro-title > h1 {
   font-size: 180px;
   line-height: .75em;
 }
+
+.devlink-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+  position: absolute;
+  bottom: 12em;
+  right: 8em;
+  
+}
+
+.devlink {
+  cursor: pointer;
+  width: 6%;
+  pointer-events: auto;
+}
+

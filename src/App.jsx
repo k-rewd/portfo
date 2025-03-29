@@ -52,6 +52,7 @@ export default function App() {
         <ProjectA />
         <ProjectA />
       </div>
+      
       <span className="button-page-indicator">
         <div className="nav-buttons">
           <button

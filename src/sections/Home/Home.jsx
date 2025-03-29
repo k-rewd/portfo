@@ -1,5 +1,6 @@
 import Techstack from "../Techstack/Techstack";
 import "./Home.css";
+import cs from '../../assets/printstreamx.png'
 
 export default function Home() {
   return (
@@ -8,12 +9,14 @@ export default function Home() {
       {/* Section 1 */}
       {/* <h1>Section 1</h1> */}
       <div className="parallax_layer page_1-base_layer" >
+        <Techstack />
         <div className="image-container"></div>
       </div>
       <div className="parallax_layer page_1-mid_layer" >
-        <Techstack />
       </div>
       <div className="parallax_layer page_1-top_layer" >
+        <div className="left-side"></div>
+        <div className="right-side">
         <div className="intro-title">
           <span className="topline">
             <p>web</p>
@@ -24,13 +27,14 @@ export default function Home() {
             <p>design</p>
           </span>
           <h1>andrew</h1>
+          </div>
         </div>
       </div>
-
+        <div className="devlink-container">
+          <img className="devlink" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+          <img className="devlink" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" />
+        </div>
     </div>
-
-
-
   )
 }
 
