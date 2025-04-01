@@ -9,7 +9,10 @@ export default function Home() {
       {/* Section 1 */}
       {/* <h1>Section 1</h1> */}
       <div className="parallax_layer page_1-base_layer" >
+      <div className="left-side">
         <Techstack />
+      </div>
+      <div className="right-side"></div>
         <div className="image-container"></div>
       </div>
       <div className="parallax_layer page_1-mid_layer" >
@@ -26,7 +29,10 @@ export default function Home() {
             <p>& </p>
             <p>design</p>
           </span>
-          <h1>andrew</h1>
+          <div className="name">
+          <h1>an</h1>
+          <h1>drew</h1>
+          </div>
           </div>
         </div>
       </div>

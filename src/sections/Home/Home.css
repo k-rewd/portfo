@@ -28,14 +28,13 @@
 .parallax_layer.page_1-base_layer {
   font-size: 100px;
   transform: translateZ(-10px) scale(2);
-
 }
 .left-side {
-  width: 57%;
+  width: 70%;
 }
 .right-side {
 
-  width: 43%;
+  width: 30%;
 }
 .image-container {
   height: 100%;
@@ -66,8 +65,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(240, 248, 255, 0.5);
+  /* background-color: rgba(240, 248, 255, 0.5); */
   padding: 10px;
+
 
 }
 .topline {
@@ -76,11 +76,17 @@
   width: 100%;
   font-size: 22px;
   letter-spacing: 7px;
+  
 }
 
-.intro-title > h1 {
-  font-size: 180px;
-  line-height: .75em;
+.name {
+  display: flex;
+  font-size: 100px;
+  line-height: 1.5em;
+}
+.name h1:first-child {
+  -webkit-text-stroke: 2px #d2d2d2;
+  color: transparent;
 }
 
 .devlink-container {
@@ -96,6 +102,6 @@
 .devlink {
   cursor: pointer;
   width: 6%;
-  pointer-events: auto;
+
 }
 

@@ -27,7 +27,7 @@ ul {
 .container {
 
   overflow-x: auto;
-  overflow-y: hidden;
+  overflow-y: auto;
   display: flex;
   flex-direction: row;
   /* gap: 100vw; */
@@ -36,8 +36,13 @@ ul {
   scroll-snap-type: x mandatory;
   inset: 0;
   
-  pointer-events: none;
+  /* pointer-events: none; */
 }
+
+.projects {
+  
+}
+
 
 .container::-webkit-scrollbar {
   height: 8px; /* Keep scrollbar visible */
@@ -75,3 +80,4 @@ ul {
 .page-indicator {
   font-size: 5em;
 }
+

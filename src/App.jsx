@@ -2,6 +2,7 @@ import { useRef, useState, useEffect } from "react";
 import "./styles.css";
 import Home from "./sections/Home/Home";
 import ProjectA from "./sections/Projects/ProjectA";
+import ProjectB from "./sections/Projects/ProjectB";
 
 export default function App() {
   const containerRef = useRef(null);
@@ -49,8 +50,13 @@ export default function App() {
     <div className="app">
       <div className="container" ref={containerRef}>
         <Home />
+        <div>
+          
+        </div>
         <ProjectA />
         <ProjectA />
+
+        {/* <ProjectB /> */}
       </div>
       
       <span className="button-page-indicator">
