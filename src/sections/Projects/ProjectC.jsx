@@ -1,6 +1,6 @@
-import './ProjectB.css'
+import './ProjectC.css'
 
-export default function ProjectB() {
+export default function ProjectC() {
 
   return (
     <div className="parallax_wrapper">

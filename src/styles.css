@@ -9,6 +9,7 @@ html {
   /* scrollbar-width: none;  Firefox */
   /* scroll-snap-type: x mandatory; */
   /* scroll-padding-top: 5vh; */
+
 }
 
 ::-webkit-scrollbar { 
@@ -22,12 +23,9 @@ ul {
 }
 
 
-
-
 .container {
-
+  /* overflow-y: hidden; */
   overflow-x: auto;
-  overflow-y: auto;
   display: flex;
   flex-direction: row;
   /* gap: 100vw; */
@@ -35,13 +33,10 @@ ul {
   perspective: 10px;
   scroll-snap-type: x mandatory;
   inset: 0;
-  
   /* pointer-events: none; */
 }
 
-.projects {
-  
-}
+
 
 
 .container::-webkit-scrollbar {

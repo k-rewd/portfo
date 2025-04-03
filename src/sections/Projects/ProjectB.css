@@ -1,11 +1,20 @@
+.project2.parallax_wrapper {
+
+
+}
+
 .parallax_group {
 
+  
   transform-style: preserve-3d;
   min-width: 100vw;
   height: 100vh;
   position: relative;
   scroll-snap-align: start;
   contain: layout paint;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .parallax_layer {
@@ -33,13 +42,53 @@
 .parallax_layer.page_2-mid_layer {
   transform: translateZ(-5px) scale(1.5);
   font-size: 100px;
-  display: flex;
-
 }
 
 /* top layer */
 .parallax_layer.page_2-top_layer {
   /* transform: translateZ(0px) scale(1); */
   display: flex;
+
+}
+
+
+.project_2.img-1 {
+  background-color: aqua;
+  width: 50%;
+  height: 60%;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+
+.project_2.img-2 {
+  background-color: aqua;
+  height: 55%;
+  width: 15%;
+  position: absolute;
+  right: 15%;
+  top: 10%;
+  
+}
+
+.project_2.window-1 {
+  border: 5px solid red;
+  width: 50%;
+  height: 60%;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  box-shadow: 0 0 0 99999px rgb(250, 250, 250);
+
+
+}
+.project_2.window-2 {
+  border: 5px solid blue;
+  height: 5em;
+  width: 3em;
+  position: absolute;
+  right: 15%;
+  top: 10%;
+  box-shadow: 0 0 0 99999px rgb(250, 250, 250);
 
 }

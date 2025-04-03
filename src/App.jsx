@@ -3,11 +3,13 @@ import "./styles.css";
 import Home from "./sections/Home/Home";
 import ProjectA from "./sections/Projects/ProjectA";
 import ProjectB from "./sections/Projects/ProjectB";
+import ProjectC from "./sections/Projects/ProjectC";
+
 
 export default function App() {
   const containerRef = useRef(null);
   const [page, setPage] = useState(1);
-  const totalPages = 3
+  const totalPages = 4
 
   // Scroll function
   const scrollToNext = () => {
@@ -50,21 +52,18 @@ export default function App() {
     <div className="app">
       <div className="container" ref={containerRef}>
         <Home />
-        <div>
-          
-        </div>
         <ProjectA />
-        <ProjectA />
+        <ProjectB />
+        <ProjectC />
 
-        {/* <ProjectB /> */}
       </div>
-      
+
       <span className="button-page-indicator">
         <div className="nav-buttons">
           <button
             className='nav-button left'
             onClick={page === 1 ? scrollToLast : scrollToPrev}
-            // disabled={page === 1}
+          // disabled={page === 1}
           >
             &lt;
           </button>

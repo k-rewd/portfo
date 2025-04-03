@@ -1,8 +1,11 @@
 
 import './ProjectA.css'
+import { useEffect, useRef } from 'react';
 import ebdbsplash from '../../assets/ebdbsplash.gif'
 import ebdbfull from '../../assets/ebdbfull.gif'
 export default function ProjectA() {
+
+  
   return (
     <>
       <div className="parallax_group" id="project-page">
@@ -44,7 +47,6 @@ export default function ProjectA() {
             <div className="project-1-window-2">
             </div>
           </div>
-
         </div>
 
       </div>
