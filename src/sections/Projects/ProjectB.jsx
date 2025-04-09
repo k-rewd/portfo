@@ -1,4 +1,6 @@
 import './ProjectB.css'
+import ebdbsplash from '../../assets/ebdbsplash.gif'
+import ebdbfull from '../../assets/ebdbfull.gif'
 
 export default function ProjectB() {
 
@@ -7,17 +9,36 @@ export default function ProjectB() {
       <div className="parallax_group" id="project-2">
 
         <h1>Section 3</h1>
-        <div className="parallax_layer base_layer">
-          <div className="project_2 img-1"></div>
-          <div className="project_2 img-2"></div>
+        
+        {/* BOTTOM LAYER */}
+        <div className="parallax_layer page_3-base_layer">
+          <div className="project_2 left">
+            <img src={ebdbsplash} className="project_2 img-1" />
+          </div>
+          <div className="project_2 right">
+
+            <img src={ebdbfull} className="project_2 img-2" />
+          </div>
         </div>
-        <div className="parallax_layer page_2-mid_layer">
-          <div className="project_2 window-1"></div>
-          <div className="project_2 window-2"></div>
+
+        {/* MID LAYER */}
+        <div className="parallax_layer page_3-mid_layer">
+          <div className="project_2 left">
+            <div className="project_2 window-1"></div>
+          </div>
+          <div className="project_2 right">
+            <div className="project_2 window-2"></div>
+          </div>
         </div>
-        <div className="parallax_layer top_layer">
+
+        {/* TOP LAYER */}
+        <div className="parallax_layer page_3-top_layer">
+        <div className="project_2 left">
           <div className="project_2 window-1-top"></div>
+        </div>
+        <div className="project_2 right">
           <div className="project_2 window-2-top"></div>
+        </div>
         </div>
 
       </div>

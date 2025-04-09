@@ -43,3 +43,10 @@
   display: flex;
 
 }
+
+.project_3.window-1 {
+  border: 1px solid red;
+  position: absolute;
+  height: 10em;
+  width: 5em;
+}
